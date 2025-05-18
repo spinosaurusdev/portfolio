@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* about config */
+  --bckgrnd: rgba(36, 31, 25, 1);
+  --bckgrnd1: rgba(36, 36, 36, 1);
+  --bckgrnd2: rgba(187, 187, 187, 1);
+  --fnt0-m: rgba(255, 191, 0, 1);
+  --fnt1-m: rgba(191, 146, 12, 1);
+  --fnt1: rgba(255, 145, 0, 1);
+  --fnt2: rgba(247, 143, 8, 1);
+  --fnt3: rgba(255, 132, 0, 1);
+  --fnt4: rgba(255, 117, 26, 1);
+  --fnt5: rgba(204, 112, 0, 1);
+  --fnt6: rgba(196, 98, 28, 1);
+  --fnt7: rgba(89, 89, 89, 1);
+  --fnt8: rgba(247, 247, 247, 1);
+  /* solid */
+  --clr-0: rgb(255, 255, 255);
+  --clr-1: rgb(248, 249, 250);
+  --clr-2: rgb(233, 236, 239);
+  --clr-3: rgb(222, 226, 230);
+  --clr-4: rgb(206, 212, 218);
+  --clr-5: rgb(173, 181, 189);
+  --clr-6: rgb(108, 117, 125);
+  --clr-7: rgb(73, 80, 87);
+  --clr-8: rgb(52, 58, 64);
+  --clr-9: rgb(33, 37, 41);
+  --clr-10: rgb(7, 7, 7);
+  --clr-11: rgb(0, 0, 0);
+  /* glass 0.5*/
+  --clr-0-05: rgba(255, 255, 255, 0.5);
+  --clr-1-05: rgba(248, 249, 250, 0.5);
+  --clr-2-05: rgba(233, 236, 239, 0.5);
+  --clr-3-05: rgba(222, 226, 230, 0.5);
+  --clr-4-05: rgba(206, 212, 218, 0.5);
+  --clr-5-05: rgba(173, 181, 189, 0.5);
+  --clr-6-05: rgba(108, 117, 125, 0.5);
+  --clr-7-05: rgba(73, 80, 87, 0.5);
+  --clr-8-05: rgba(52, 58, 64, 0.5);
+  --clr-9-05: rgba(33, 37, 41, 0.5);
+  --clr-10-05: rgba(7, 7, 7, 0.5);
+  --clr-11-05: rgba(0, 0, 0, 0.5);
+  /* glass 0.25*/
+  --clr-0-025: rgba(255, 255, 255, 0.25);
+  --clr-1-025: rgba(248, 249, 250, 0.25);
+  --clr-2-025: rgba(233, 236, 239, 0.25);
+  --clr-3-025: rgba(222, 226, 230, 0.25);
+  --clr-4-025: rgba(206, 212, 218, 0.25);
+  --clr-5-025: rgba(173, 181, 189, 0.25);
+  --clr-6-025: rgba(108, 117, 125, 0.25);
+  --clr-7-025: rgba(73, 80, 87, 0.25);
+  --clr-8-025: rgba(52, 58, 64, 0.25);
+  --clr-9-025: rgba(33, 37, 41, 0.25);
+  --clr-10-025: rgba(7, 7, 7, 0.25);
+  --clr-11-025: rgba(0, 0, 0, 0.25);
+  /* buttons */
+  --clr-red: rgba(255, 0, 0, 1);
+  --clr-red-05: rgba(255, 0, 0, 0.5);
+  --clr-red-025: rgba(255, 0, 0, 0.25);
+  --clr-green: rgba(0, 255, 0, 1);
+  --clr-green-05: rgba(0, 255, 0, 0.5);
+  --clr-green-025: rgba(0, 255, 0, 0.25);
+  --clr-blue: rgba(1, 42, 74, 1);
+  --clr-blue-1: rgba(1, 73, 124, 1);
+  --clr-teal: rgba(47, 133, 125, 1);
+  --clr-persian-green: rgba(32, 168, 150, 1);
+  --clr-turquoise: rgba(16, 203, 175, 1);
+  --clr-pine-green: rgba(21, 106, 91, 1);
+  --clr-pigment-green: rgba(19, 155, 73, 1);
+  --clr-pigment-green-05: rgba(19, 155, 73, 0.5);
+  --clr-lime-green: rgba(16, 204, 54, 1);
+
+  --background-color: var(--clr-0);
+  --text-color: var(--clr-blue);
+  --text-color2: var(--clr-11);
+  --background: var(--clr-blue-1);
+  --line: var(--clr-blue-1);
+  color: var(--clr-10);
+  --image1: url("./assets/bezosW.jpg");
+  --image2: url("./assets/jobs.jpg");
+  --image3: url("./assets/gatesW.jpg");
+}
+
+[data-theme="dark"] {
+  --background-color: var(--clr-11);
+  --text-color: var(--fnt4);
+  --text-color2: var(--clr-0);
+  --background: var(--fnt0-m);
+  --line: var(--fnt0-m);
+  color: var(--clr-0);
+  --image1: url("./assets/bezosB.jpg");
+  --image2: url("./assets/jobsB.jpg");
+  --image3: url("./assets/gatesB.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Outfit", serif;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__menu {
+  display: flex;
+  width: 70%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 2rem;
+  margin-bottom: 21px;
+}
+
+.header__menu__container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.header__menu__left,
+.header__menu__right {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* .header__menu__left{
+    justify-content: flex-start;
+} */
+
+.header__menu__right {
+  text-align: right;
+}
+
+.header__menu__link {
+  text-decoration: none;
+  height: 28px;
+}
+
+.header__menu__link:hover {
+  color: var(--fnt7);
+}
+
+.header__menu__nolink {
+  text-decoration: none;
+  height: 28px;
+}
+
+.header__menu__icon {
+  font-size: 0.5rem;
+  border: var(--line) solid 1px;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+#dynamic__text,
+#clima {
+  font-size: 0.9rem;
+}
+
+.header__menu__linea {
+  border-top: 2px dotted var(--line);
+  height: 2px;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__title {
+  width: 70%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__title__h1 {
+  font-size: 5rem;
+  transition: text-shadow 0.1s ease-out;
+}
+
+.main__container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main__container__img {
+  width: auto;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__container__text {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+.main__container__text1,
+.main__container__text4 {
+  height: 28px;
+}
+
+.main__container__text1 {
+  color: var(--text-color2);
+}
+
+.main__container__text2 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  height: 28px;
+}
+
+.main__container__text3 {
+  color: var(--text-color);
+  font-size: 2.8rem;
+  height: 49px;
+  margin-bottom: 7px;
+}
+
+.main__container__text4 {
+  color: var(--text-color2);
+  text-align: right;
+}
+
+.main_container_social {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 2rem;
+  margin-top: 14px;
+  color: black;
+}
+
+.main__container__linea {
+  width: 70%;
+  border-top: 4px solid var(--line);
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
