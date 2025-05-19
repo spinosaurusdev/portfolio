@@ -1,4 +1,5 @@
 ### Never stop learning!
+- https://spinosaurusdev.github.io/portfolio/
 
 ### <div align="center">I'm Edd, a full-stack developer, learning programming and growing since 2021</div>
 
