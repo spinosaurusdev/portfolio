@@ -72,7 +72,6 @@ function showDateTime() {
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
-    second: "numeric",
   };
 
   document.getElementById("date").innerHTML = new Intl.DateTimeFormat(
