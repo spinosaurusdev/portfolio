@@ -132,7 +132,7 @@
 .header__menu__right {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 560px;
   font-size: 1.2rem;
   font-weight: 200;
 }
@@ -174,7 +174,7 @@
 }
 
 .header__menu__linea {
-  border-top: 2px dotted var(--line);
+  border-top: 1px solid var(--line);
   height: 2px;
   padding: 0;
 }
@@ -268,9 +268,10 @@ i {
 .footer {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: auto;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .footer__menu {
   display: flex;
@@ -282,6 +283,7 @@ i {
   font-size: 2rem;
   margin-bottom: 21px;
 }
+.header__menu__nolink,
 .footer__menu__link {
   text-decoration: none;
   height: 28px;
