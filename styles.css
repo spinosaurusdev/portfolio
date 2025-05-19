@@ -258,6 +258,7 @@
 i {
   font-size: 2rem;
   margin-top: 14px;
+  color: var(--text-color);
 }
 
 .main__container__linea {
