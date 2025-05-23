@@ -81,6 +81,21 @@ function showDateTime() {
 }
 setInterval(showDateTime, 1000);
 
+//Llamada a la accion para email me.
+function showTime() {
+  let time = new Date();
+  let options = {
+    hour: "numeric",
+    minute: "numeric",
+  };
+  let hour = new Intl.DateTimeFormat("en-US", options).format(time);
+
+  document.getElementById(
+    "time"
+  ).textContent = `It's only ${hour}, good time for you to `;
+}
+setInterval(showTime, 1000);
+
 //Script para el efecto de sombra dinámica en el título principal
 // Seleccionar el elemento
 const shadow = document.querySelector(".main__title__h1");
