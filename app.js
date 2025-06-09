@@ -92,7 +92,7 @@ function showTime() {
 
   document.getElementById(
     "time"
-  ).textContent = `It's only ${hour}, good time for you to `;
+  ).textContent = `It's only ${hour}, good time for you to send me a  ¡`;
 }
 setInterval(showTime, 1000);
 

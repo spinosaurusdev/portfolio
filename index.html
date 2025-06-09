@@ -7,36 +7,62 @@
   <title>spinosaurus.dev</title>
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/887874bb11.js" crossorigin="anonymous"></script>
+
+  <script data-info="hacks-body">
+    document.addEventListener("DOMContentLoaded", function () {
+      const dateVersion1 = {
+        year: "numeric",
+        month: "long",
+        day: "2-digit"
+      }
+      document.querySelector('.get-date').textContent = new Date().toLocaleDateString('en-US', dateVersion1);
+    });
+  </script>
+  <script>
+    // on DOM ready
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const timeVersion2 = {
+        timeZone: "America/New_York",
+        hour12: true,
+        hour: "numeric",
+        minute: "numeric"
+      }
+
+      document.querySelector('.get-time').textContent = new Date().toLocaleTimeString('en-US', timeVersion2);
+    });
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="header">
     <nav class="header__menu">
-      <a class="header__menu__link" href="#">Edison Sanchez</a>
+      <a class="header__menu__link" href="#">SpinosaurusDev</a>
       <button class="header__menu__icon" id="theme-toggle">Light-Dark</button>
     </nav>
     <section class="header__menu__container">
       <nav class="header__menu__left">
-        <a class="header__menu__link" href="#">Work</a>
-        <div class="header__menu__linea"></div>
+        <a class="header__menu__link" href="/gabin.html">Work</a>
+
         <a class="header__menu__link" href="#">About</a>
-        <div class="header__menu__linea"></div>
+
         <a class="header__menu__link" href="#">Contact</a>
-        <div class="header__menu__linea"></div>
+
       </nav>
       <nav class="header__menu__right">
-        <p class="header__menu__nolink">Currently open to freelance work</p>
-        <div class="header__menu__linea"></div>
+        <!-- <p class="header__menu__nolink">Currently open to freelance work</p> -->
+
         <p class="header__menu__nolink" id="clima">Loading weather...</p>
-        <div class="header__menu__linea"></div>
+
         <section class="header__menu__social">
           <a class="header__menu__link" href="https://www.linkedin.com/in/edison-sanchez-norato/"
             id="dynamic__text">LinkedIn -</a>
           <a class="header__menu__link" href="https://github.com/spinosaurusdev" id="dynamic__text">Github -</a>
           <a class="header__menu__link" href="https://instagram.com/spinosaurusdev" id="dynamic__text">Instagram</a>
         </section>
-        <div class="header__menu__linea"></div>
+
       </nav>
     </section>
   </header>
@@ -64,7 +90,20 @@
       </section>
     </div>
     <div class="main__container__linea"></div>
+    <section class="main__projects">
+      <p>Proyectos</p>
+    </section>
+    <div class="main__container__linea"></div>
+    <section class="main__about">
+      <p>About</p>
+    </section>
+    <div class="main__container__linea"></div>
+    <section class="main__contact">
+      <p>Formulario</p>
+    </section>
+    <div class="main__container__linea"></div>
   </main>
+
 
   <footer class="footer">
     <nav class="footer__menu">
@@ -80,9 +119,10 @@
         <div class="footer__menu__linea"></div>
       </nav>
       <nav class="footer__menu__right">
-        <p class="footer__menu__nolink" id="time"></p>
-        <div class="footer__menu__linea"></div>
-        <p class="footer__menu__nolink" id="clima">Loading weather...</p>
+        <div class="footer__emailme">
+          <p class="footer__menu__nolink" id="time"></p>
+          <a href="mailto:spinosaurusdev@gmail.com" target="_blank" rel="noreferrer"> quick email!</a>
+        </div>
         <div class="footer__menu__linea"></div>
         <section class="footer__menu__social">
           <a href="https://www.linkedin.com/in/edison-sanchez-norato/"><i class="fa-brands fa-linkedin"></i></a>
