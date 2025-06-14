@@ -186,6 +186,63 @@
   padding: 0;
 }
 
+.sidebar {
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  max-width: 70px;
+  min-width: 36px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+}
+
+.col-top {
+  position: static;
+  height: 10%;
+  padding-top: 30px;
+}
+
+.col-mid {
+  position: static;
+  height: 70%;
+}
+
+.col-bot {
+  position: static;
+  height: 20%;
+}
+
+.colophon {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  right: 0;
+  bottom: auto;
+  width: 40vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.logo2 {
+  width: 42px;
+  transform: rotate(-90deg);
+}
+
 .main {
   display: flex;
   width: 100%;
