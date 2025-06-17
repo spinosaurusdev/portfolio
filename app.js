@@ -154,3 +154,41 @@ themeToggle.addEventListener("click", () => {
   const currentTheme = rootElement.getAttribute("data-theme");
   localStorage.setItem("theme", currentTheme);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtenemos los elementos del DOM
+  const audio = document.getElementById("soundtrack");
+  const btn = document.getElementById("sound_button");
+
+  // Estado actual: pausado o reproduciendo
+  let isPlaying = false;
+
+  // Función que se ejecuta al hacer clic en el botón
+  btn.addEventListener("click", function () {
+    if (!isPlaying) {
+      // Intentar reproducir el audio
+      const playPromise = audio.play();
+
+      // Algunos navegadores requieren interacción del usuario para reproducir
+      if (playPromise !== false) {
+        playPromise
+          .then((_) => {
+            // Reproducción iniciada
+            btn.textContent = "Playing";
+            isPlaying = true;
+          })
+          .catch((error) => {
+            alert(
+              "Por favor, interactúa con la página para activar el sonido."
+            );
+            console.error("Error al intentar reproducir el audio:", error);
+          });
+      }
+    } else {
+      // Pausar el audio
+      audio.pause();
+      btn.textContent = "Silent";
+      isPlaying = false;
+    }
+  });
+});

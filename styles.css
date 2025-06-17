@@ -208,18 +208,19 @@
 
 .col-mid {
   position: static;
-  height: 70%;
+  height: 80%;
 }
 
 .col-bot {
   position: static;
-  height: 20%;
+  height: 10%;
+  padding-bottom: 10px;
 }
 
 .colophon {
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 70%;
   right: 0;
   bottom: auto;
   width: 40vw;
@@ -227,11 +228,7 @@
   margin-bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  -webkit-transform-origin: 0% 0%;
-  -ms-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
   font-weight: 400;
   text-align: left;
@@ -243,6 +240,16 @@
   transform: rotate(-90deg);
 }
 
+.sound_button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-image: url("./public/icons8-onda-sonora.gif");
+}
+
+.sound_button:hover {
+  cursor: pointer;
+}
 .main {
   display: flex;
   width: 100%;
