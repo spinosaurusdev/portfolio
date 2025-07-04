@@ -102,6 +102,86 @@
   font-family: "Outfit", serif;
 }
 
+.sidebar {
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  max-width: 70px;
+  min-width: 36px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+    rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.sidebar__col__top {
+  position: static;
+  height: 10%;
+  padding-top: 30px;
+}
+
+.sidebar__col__mid {
+  position: static;
+  height: 80%;
+}
+
+.sidebar__col__bot {
+  position: static;
+  height: 10%;
+  padding-bottom: 30px;
+}
+
+.sidebar__col__mid__colophon {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  right: 0;
+  bottom: auto;
+  width: 35vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sidebar__col__mid__colophon_text {
+  max-width: 80%;
+  text-align: justify;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.logo2 {
+  width: 42px;
+  transform: rotate(-90deg);
+}
+
+.sound_button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-image: url("./public/icons8-onda-sonora.gif");
+}
+
+.sound_button:hover {
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
 .header {
   display: flex;
   width: 100%;
@@ -184,77 +264,6 @@
   border-top: 1px solid var(--line);
   height: 2px;
   padding: 0;
-}
-
-.sidebar {
-  position: fixed;
-  left: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  max-width: 70px;
-  min-width: 36px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-left: 1px solid var(--line);
-}
-
-.col-top {
-  position: static;
-  height: 10%;
-  padding-top: 30px;
-}
-
-.col-mid {
-  position: static;
-  height: 80%;
-}
-
-.col-bot {
-  position: static;
-  height: 10%;
-  padding-bottom: 10px;
-}
-
-.colophon {
-  position: absolute;
-  left: 0;
-  top: 70%;
-  right: 0;
-  bottom: auto;
-  width: 40vw;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transform: rotate(-90deg);
-  transform-origin: 0% 0%;
-  font-weight: 400;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.logo2 {
-  width: 42px;
-  transform: rotate(-90deg);
-}
-
-.sound_button {
-  width: 42px;
-  height: 42px;
-  border: none;
-  background-image: url("./public/icons8-onda-sonora.gif");
-}
-
-.sound_button:hover {
-  cursor: pointer;
-}
-.main {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
 }
 
 .main__title {

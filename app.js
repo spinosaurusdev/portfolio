@@ -90,9 +90,7 @@ function showTime() {
   };
   let hour = new Intl.DateTimeFormat("en-US", options).format(time);
 
-  document.getElementById(
-    "time"
-  ).textContent = `It's only ${hour}, good time for you to send me a  ¡`;
+  document.getElementById("time").textContent = `${hour}`;
 }
 setInterval(showTime, 1000);
 

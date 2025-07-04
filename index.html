@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>spinosaurus.dev</title>
-  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./public/logo alternativo ES.svg" type="image/x-icon">
   <script src="https://kit.fontawesome.com/887874bb11.js" crossorigin="anonymous"></script>
 
   <script data-info="hacks-body">
@@ -37,21 +37,21 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="sidebar"
-      style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-      <div class="col-top"><img src="/public/logo alternativo ES.svg" loading="lazy" alt="ES logo alternative."
-          class="logo2"></div>
-      <div class="col-mid">
-        <h6 class="colophon">
-          <p class="header__menu__nolink" id="clima">Loading weather...</p>
-        </h6>
-      </div>
-      <div class="col-bot"><button loading="lazy" alt="Sound control." class="sound_button" id="sound_button">
-          <audio id="soundtrack" src="/public/brain-implant-cyberpunk-sci-fi-trailer-action-intro-330416.mp3"
-            loop></audio>
-      </div>
+  <div class="sidebar">
+    <div class="sidebar__col__top"><img src="/public/logo alternativo ES.svg" loading="lazy" alt="ES logo alternative."
+        class="logo2"></div>
+    <div class="sidebar__col__mid">
+      <h6 class="sidebar__col__mid__colophon">
+        <p class="sidebar__col__mid__colophon_text" id="clima">Loading weather...</p>
+      </h6>
     </div>
+    <div class="sidebar__col__bot"><button loading="lazy" alt="Sound control." class="sound_button" id="sound_button">
+        <audio id="soundtrack" src="/public/brain-implant-cyberpunk-sci-fi-trailer-action-intro-330416.mp3"
+          loop></audio>
+    </div>
+  </div>
+  <header class="header">
+
     <nav class="header__menu">
       <a class="header__menu__link" href="#">SpinosaurusDev</a>
       <button class="header__menu__icon" id="theme-toggle">Light-Dark</button>
@@ -132,10 +132,8 @@
         <div class="footer__menu__linea"></div>
       </nav>
       <nav class="footer__menu__right">
-        <div class="footer__emailme">
-          <p class="footer__menu__nolink" id="time"></p>
-          <a href="mailto:spinosaurusdev@gmail.com" target="_blank" rel="noreferrer"> quick email!</a>
-        </div>
+        <div>It's <span id="time">19:00</span>. <br>Still not too late to <a href="/contact">shoot
+            me a quick email</a>.</div>
         <div class="footer__menu__linea"></div>
         <section class="footer__menu__social">
           <a href="https://www.linkedin.com/in/edison-sanchez-norato/"><i class="fa-brands fa-linkedin"></i></a>
