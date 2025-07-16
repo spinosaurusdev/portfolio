@@ -77,8 +77,10 @@
   --text-color2: var(--clr-11);
   --text-color3: var(--fnt4);
   --text-color4: var(--clr-0);
+  --text-hoover: var(--fnt7);
   --background: var(--clr-blue-1);
   --line: var(--clr-blue-1);
+  --line2: var(--fnt0-m);
   color: var(--clr-10);
   --image1: url("./assets/bezosW.jpg");
   --image2: url("./assets/jobs.jpg");
@@ -92,8 +94,10 @@
   --text-color2: var(--clr-0);
   --text-color3: var(--clr-blue);
   --text-color4: var(--clr-11);
+  --text-hoover: var(--fnt7);
   --background: var(--fnt0-m);
   --line: var(--fnt0-m);
+  --line2: var(--clr-blue-1);
   color: var(--clr-0);
   --image1: url("./assets/bezosB.jpg");
   --image2: url("./assets/jobsB.jpg");
@@ -213,6 +217,25 @@
   align-items: center;
   flex-direction: column;
 }
+
+.breakline {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--line);
+  margin: 3.5px 0;
+}
+
+.breakline2 {
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--line2);
+  margin: 3.5px 0;
+}
+
+.format__date {
+  font-size: 1.2rem;
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -257,10 +280,11 @@
 .header__menu__nolink {
   text-decoration: none;
   height: 28px;
+  cursor: pointer;
 }
 
 .header__menu__link:hover {
-  color: var(--fnt7);
+  color: var(--text-hoover);
 }
 
 .header__menu__nolink {
@@ -373,11 +397,10 @@ i {
   bottom: 0;
   display: flex;
   width: 100%;
-  height: 280px;
+  height: auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--background-color2);
 }
 
 .footer__menu {
@@ -389,15 +412,22 @@ i {
   padding: 0 20px;
   font-size: 2rem;
   margin-bottom: 21px;
-  background-color: var(--background-color2);
   cursor: pointer;
+}
+
+.footer__menu__linea {
+  margin-bottom: 7px;
+  width: 70%;
+  border-top: 2px solid var(--line);
 }
 
 .footer__menu__link {
   text-decoration: none;
   height: 28px;
-  color: var(--text-color3);
-  background-color: var(--background-color2);
+}
+
+.footer__menu__link:hover {
+  color: var(--text-hoover);
 }
 
 .footer__menu__container {
@@ -405,7 +435,6 @@ i {
   justify-content: space-between;
   width: 70%;
   margin-bottom: 42px;
-  background-color: var(--background-color2);
 }
 
 .footer__menu__left,
@@ -421,20 +450,12 @@ i {
   text-align: right;
 }
 
-.footer__menu__right,
-.format__date {
-  color: var(--text-color3);
-  background-color: var(--background-color2);
-}
-
-.footer__menu__contact,
-.footer__menu__detail {
-  color: var(--text-color3);
-  background-color: var(--background-color2);
-}
-
 .footer__emailme {
-  color: var(--text-color3);
   display: flex;
   justify-content: flex-end;
+}
+
+.format__copy {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
 }
