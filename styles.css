@@ -245,7 +245,7 @@
   flex-direction: column;
 }
 
-.header__menu {
+.menu {
   display: flex;
   width: 70%;
   height: 70px;
@@ -256,14 +256,14 @@
   margin-bottom: 21px;
 }
 
-.header__menu__container {
+.menu__container {
   display: flex;
   justify-content: space-between;
   width: 70%;
 }
 
-.header__menu__left,
-.header__menu__right {
+.menu__left,
+.menu__right {
   display: flex;
   flex-direction: column;
   width: 42%;
@@ -271,23 +271,23 @@
   font-weight: 200;
 }
 
-.header__menu__right {
+.menu__right {
   text-align: right;
 }
 
-.header__menu__link,
-.header__menu__social,
-.header__menu__nolink {
+.menu__link,
+.menu__social,
+.menu__nolink {
   text-decoration: none;
   height: 28px;
   cursor: pointer;
 }
 
-.header__menu__link:hover {
+.menu__link:hover {
   color: var(--text-hoover);
 }
 
-.header__menu__nolink {
+.menu__nolink {
   font-size: 1rem;
 }
 
@@ -295,12 +295,6 @@
 #clima {
   font-size: 1rem;
   width: 100%;
-}
-
-.header__menu__linea {
-  border-top: 1px solid var(--line);
-  height: 2px;
-  padding: 0;
 }
 
 .main__title {
@@ -377,7 +371,7 @@ i {
   color: var(--text-color);
 }
 
-.main__container__linea {
+.linea {
   margin-top: -4px;
   width: 70%;
   border-top: 2px solid var(--line);
@@ -401,58 +395,6 @@ i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.footer__menu {
-  display: flex;
-  width: 70%;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  font-size: 2rem;
-  margin-bottom: 21px;
-  cursor: pointer;
-}
-
-.footer__menu__linea {
-  margin-bottom: 7px;
-  width: 70%;
-  border-top: 2px solid var(--line);
-}
-
-.footer__menu__link {
-  text-decoration: none;
-  height: 28px;
-}
-
-.footer__menu__link:hover {
-  color: var(--text-hoover);
-}
-
-.footer__menu__container {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin-bottom: 42px;
-}
-
-.footer__menu__left,
-.footer__menu__right {
-  display: flex;
-  flex-direction: column;
-  width: 42%;
-  font-size: 1.2rem;
-  font-weight: 200;
-}
-
-.footer__menu__right {
-  text-align: right;
-}
-
-.footer__emailme {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .format__copy {
