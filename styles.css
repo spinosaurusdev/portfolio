@@ -160,10 +160,10 @@
   align-items: flex-start;
   justify-content: center;
   left: 0;
-  top: 80%;
+  top: 75%;
   right: 0;
   bottom: auto;
-  width: 50vw;
+  width: 42vw;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 10px;
@@ -178,7 +178,6 @@
 .sidebar__col__mid__colophon_text {
   max-width: 80%;
   text-align: justify;
-  font-size: 0.7rem;
   text-decoration: none;
 }
 
@@ -387,7 +386,6 @@ i {
 }
 
 .footer {
-  position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
@@ -399,5 +397,5 @@ i {
 
 .format__copy {
   font-size: 1.2rem;
-  margin-bottom: 14px;
+  margin: 21px;
 }
